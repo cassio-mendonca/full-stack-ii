@@ -1,0 +1,154 @@
+@charset "UTF-8";
+:root{
+    --fundo: #f5f5f5;
+    --contraste_fundo:#A3ACC2;
+    --barra: #182543;
+    --fonte01:#6D778F;
+    --contraste01:#9DB7F5;
+    --contraste02:#33405C;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: var(--contraste_fundo);
+}
+
+header {
+    background: var(--barra);
+    height: 10vh;    
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    list-style: none;
+    flex-flow: row nowrap;
+}
+li a{
+    text-decoration: none;
+    color: var(--fonte01);
+    font-size: 1.2rem;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+a:hover{
+    color: var(--fundo);
+    background: var(--contrate01);
+    border-radius: 5px;
+
+}
+main {
+    background-color: var(--fundo);
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 20px;
+    align-items: center;
+
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+section h2 {
+    grid-column: 1 / -1;
+    color: var(--contraste02);
+}
+
+.foto {
+    width: 350px;
+    height: 220px;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.texto p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: var(--contraste02);
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario button {
+    width: fit-content;
+    padding: 10px 20px;
+    background: var(--barra);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background: var(--contraste02);
+}
+#f1{
+    background-image: url(imagens/Feedback1.png);
+}
+#f2{
+    background-image: url(imagens/Feedback2.png);
+}
+#f3{
+    background-image: url(imagens/historia01.png);
+}
+#f4{
+    background-image: url(imagens/Unidade02.png);
+}
+#f5{
+    background-image: url(imagens/Unidade01.jpg);
+}
+#f6{
+    background-image: url(imagens/Unidade02.png);
+}
+#f7 {
+    background-image: url("imagens/Serviço1.png");
+}
+
+#f8 {
+    background-image: url("imagens/Serviço02.png");
+}
+
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        width: 100%;
+    }
+}

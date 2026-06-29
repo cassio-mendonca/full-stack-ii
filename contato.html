@@ -28,21 +28,21 @@
         <section>
             <h2>Contrate-nos</h2>
 
-            <form class="formulario">
+            <form class="formulario" action="backend/contato.php" method="POST">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" name="nome" required>
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone">
+                <input type="tel" id="telefone" name="telefone">
 
                 <label for="servico">Serviço desejado</label>
-                <input type="text" id="servico">
+                <input type="text" id="servico" name="servico">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" rows="5"></textarea>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -51,21 +51,21 @@
         <section>
             <h2>Trabalhe Conosco</h2>
 
-            <form class="formulario">
+            <form class="formulario" action="backend/candidatura.php" method="POST">
                 <label for="nome-candidato">Nome</label>
-                <input type="text" id="nome-candidato" required>
+                <input type="text" id="nome-candidato" name="nome" required>
 
                 <label for="email-candidato">E-mail</label>
-                <input type="email" id="email-candidato" required>
+                <input type="email" id="email-candidato" name="email" required>
 
                 <label for="telefone-candidato">Telefone</label>
-                <input type="tel" id="telefone-candidato">
+                <input type="tel" id="telefone-candidato" name="telefone">
 
                 <label for="cargo">Cargo de interesse</label>
-                <input type="text" id="cargo">
+                <input type="text" id="cargo" name="cargo">
 
                 <label for="experiencia">Experiência</label>
-                <textarea id="experiencia" rows="5"></textarea>
+                <textarea id="experiencia" name="experiencia" rows="5"></textarea>
 
                 <button type="submit">Enviar Currículo</button>
             </form>

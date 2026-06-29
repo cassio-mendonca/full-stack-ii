@@ -4,6 +4,7 @@ $user = "root";
 $pass = "";
 $db = "falcon_db";
 
+
 $conn = mysqli_connect($host, $user, $pass, $db);
 
 if(!$conn){
